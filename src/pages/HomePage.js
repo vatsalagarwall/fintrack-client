@@ -6,6 +6,8 @@ import Spinner from '../components/Spinner';
 import axios from 'axios';
 import moment from 'moment'
 import Analytics from '../components/Analytics';
+import ReactGA from 'react-ga';
+
 const { RangePicker } = DatePicker;
 
 const HomePage = () => {
@@ -18,7 +20,10 @@ const HomePage = () => {
     const [viewData, setViewData] = useState("table");
     const [editable, setEditable] = useState(null);
 
-
+    //react ga
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname)
+    }, [])
 
     // Table columns
     const columns = [{
