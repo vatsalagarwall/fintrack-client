@@ -12,7 +12,7 @@ const Register = () => {
     const submitHandler = async (values) => {
         try {
             setLoading(true);
-            await axios.post('https://fintrack-server.vercel.app/users/register', values);
+            await axios.post('https://fintrack-server.vercel.app/api/v1/users/register', values);
             message.success('Registration Successful');
             setLoading(false);
             navigate('/login');
