@@ -99,7 +99,7 @@ const HomePage = () => {
             try {
                 const user = JSON.parse(localStorage.getItem('user'));
                 setLoading(true);
-                const res = await axios.post('/transactions/get-transaction', {
+                const res = await axios.post('https://fintrack-server.vercel.app/transactions/get-transaction', {
                     userid: user._id, frequency, selectedDate, type
                 });
                 setLoading(false)
@@ -118,7 +118,7 @@ const HomePage = () => {
     const handleDelete = async (record) => {
         try {
             setLoading(true)
-            await axios.post("/transactions/delete-transaction", { transactionId: record._id })
+            await axios.post("https://fintrack-server.vercel.app/transactions/delete-transaction", { transactionId: record._id })
             setLoading(false)
             message.success("Transaction Deleted")
         } catch (error) {
@@ -136,7 +136,7 @@ const HomePage = () => {
             const user = JSON.parse(localStorage.getItem('user'));
             setLoading(true);
             if (editable) {
-                await axios.post('/transactions/edit-transaction', {
+                await axios.post('https://fintrack-server.vercel.app/transactions/edit-transaction', {
                     payload: {
                         ...values,
                         userId: user._id
@@ -146,7 +146,7 @@ const HomePage = () => {
                 setLoading(false);
                 message.success("Transaction updated successfully");
             } else {
-                await axios.post('/transactions/add-transaction', { ...values, userid: user._id });
+                await axios.post('https://fintrack-server.vercel.app/transactions/add-transaction', { ...values, userid: user._id });
                 setLoading(false);
                 message.success("Transaction added successfully");
             }
