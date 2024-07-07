@@ -212,7 +212,7 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className='content'>
                     {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} /> : <Analytics allTransactions={allTransactions} />
                     }
                 </div>
