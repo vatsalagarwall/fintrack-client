@@ -20,7 +20,7 @@ const Analytics = ({ allTransactions }) => {
     const totalExpenseTurnoverPercent = (totalExpenseTurnover / totalTurnover) * 100;
 
     return (
-        <div className="container mt-4" style={{ minHeight: 'calc(100vh - 200px)' }}>
+        <div className="container mt-4" style={{ height: "100vh" }}>
             <div className="row mb-4">
                 <div className="col-md-6">
                     <div className="card shadow-sm">
