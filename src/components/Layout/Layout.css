@@ -9,3 +9,10 @@
   flex: 1;
   padding: 20px; /* Optional: Add padding if needed */
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
