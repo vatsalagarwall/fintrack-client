@@ -85,3 +85,25 @@
 .inactive-icon {
   color: gray;
 }
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .switch-icons {
+    margin-top: 10px;
+  }
+
+  .logout-button {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .table-container,
+  .analytics-container {
+    overflow-x: auto;
+  }
+}
