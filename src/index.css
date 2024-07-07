@@ -46,9 +46,9 @@
   width: 100%;
 }
 
-/* .content {
-  flex: 1;
-} */
+.content {
+  height: 100vh;
+}
 
 .register-page {
   display: flex;
