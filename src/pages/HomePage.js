@@ -213,7 +213,7 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div className='content'>
+                <div className='content' style={{ height: "100%" }}>
                     {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} /> : <Analytics allTransactions={allTransactions} />
                     }
                 </div>
