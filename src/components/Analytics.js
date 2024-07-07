@@ -86,6 +86,9 @@ const Analytics = ({ allTransactions }) => {
                     })}
                 </div>
             </div>
+            <div className='row'>
+
+            </div>
         </div>
     );
 }
