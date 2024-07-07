@@ -261,7 +261,7 @@ const HomePage = () => {
                         </div>
                     </Form>
                 </Modal>
-                <Footer />
+
             </Layout>
 
         </>

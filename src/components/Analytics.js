@@ -87,8 +87,6 @@ const Analytics = ({ allTransactions }) => {
                     })}
                 </div>
             </div>
-            <Footer />
-
         </div>
     );
 }
