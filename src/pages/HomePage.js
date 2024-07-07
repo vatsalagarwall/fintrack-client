@@ -260,12 +260,12 @@ const HomePage = () => {
                         </div>
                     </Form>
                 </Modal>
-                {viewData === 'table' && (
-                    <div className='bg-dark text-light p-4 footer' >
-                        <h6 className='text-center'>Made by <a href="https://portfolio-vatsal.vercel.app/" target="_blank" style={{ color: "white" }}>Vatsal</a></h6>
-                    </div>
-                )}
             </Layout>
+            {viewData === 'table' && (
+                <div className='bg-dark text-light p-4 footer' >
+                    <h6 className='text-center'>Made by <a href="https://portfolio-vatsal.vercel.app/" target="_blank" style={{ color: "white" }}>Vatsal</a></h6>
+                </div>
+            )}
 
         </>
     );
