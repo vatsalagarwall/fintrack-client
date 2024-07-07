@@ -7,7 +7,6 @@ import axios from 'axios';
 import moment from 'moment'
 import Analytics from '../components/Analytics';
 import ReactGA from 'react-ga';
-import Footer from '../components/Layout/Footer';
 
 const { RangePicker } = DatePicker;
 
@@ -213,7 +212,7 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div className='content' style={{ height: "100%" }}>
+                <div>
                     {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} /> : <Analytics allTransactions={allTransactions} />
                     }
                 </div>
