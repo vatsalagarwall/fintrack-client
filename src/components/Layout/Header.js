@@ -73,7 +73,7 @@ const Header = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <Link className="navbar-brand" to="/">FinTrack</Link>
+                    <Link className="navbar-brand" to="/">Expenzify</Link>
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item d-flex align-items-center">
                             <p className='nav-link mb-0 d-flex align-items-center'>
