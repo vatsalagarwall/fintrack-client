@@ -261,7 +261,7 @@ const HomePage = () => {
                     </Form>
                 </Modal>
             </Layout>
-
+            <Footer />
         </>
     );
 };
