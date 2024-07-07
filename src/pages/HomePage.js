@@ -260,7 +260,11 @@ const HomePage = () => {
                         </div>
                     </Form>
                 </Modal>
-
+                {viewData === 'table' && (
+                    <div className="footer">
+                        <p>Some footer content</p>
+                    </div>
+                )}
             </Layout>
 
         </>
