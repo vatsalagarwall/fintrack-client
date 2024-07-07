@@ -217,6 +217,7 @@ const HomePage = () => {
                     {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} /> : <Analytics allTransactions={allTransactions} />
                     }
                 </div>
+
                 <Modal
                     title={editable ? 'Edit Transaction' : 'Add Transaction'}
                     open={showModal}
@@ -260,8 +261,9 @@ const HomePage = () => {
                         </div>
                     </Form>
                 </Modal>
+                <Footer />
             </Layout>
-            <Footer />
+
         </>
     );
 };

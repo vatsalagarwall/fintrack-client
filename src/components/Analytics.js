@@ -1,5 +1,6 @@
 import React from 'react';
 import { Progress } from 'antd';
+import Footer from './Layout/Footer';
 
 const Analytics = ({ allTransactions }) => {
     const categories = ['salary', 'tip', 'project', 'food', 'movie', 'bills', 'medical', 'fee', 'tax'];
@@ -86,6 +87,7 @@ const Analytics = ({ allTransactions }) => {
                     })}
                 </div>
             </div>
+            <Footer />
 
         </div>
     );
