@@ -102,18 +102,16 @@
 
   .logout-button {
     margin-top: 10px;
-    width: 100%; /* Ensure button takes full width */
+    width: 100%;
     text-align: center;
   }
 
-  /* Ensure the table or analytics container does not overflow horizontally */
   .table-container,
   .analytics-container {
-    overflow-x: auto; /* Enable horizontal scroll if needed */
+    overflow-x: auto;
   }
 
-  /* Adjust footer to full width */
   .footer {
-    width: 100%;
+    width: 200%;
   }
 }
