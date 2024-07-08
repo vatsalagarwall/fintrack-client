@@ -7,6 +7,7 @@ import axios from 'axios';
 import moment from 'moment'
 import Analytics from '../components/Analytics';
 import ReactGA from 'react-ga';
+import Header from '../components/Layout/Header';
 import { Header } from 'antd/es/layout/layout';
 
 const { RangePicker } = DatePicker;
