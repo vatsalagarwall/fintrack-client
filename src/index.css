@@ -86,17 +86,6 @@
   color: gray;
 }
 
-.footer {
-  background-color: #212121; /* Change to your desired footer background color */
-  color: #fff; /* Change to your desired footer text color */
-  padding: 10px 20px;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 @media (max-width: 768px) {
   .filters {
     flex-direction: column;
