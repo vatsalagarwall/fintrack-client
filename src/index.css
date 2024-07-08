@@ -1,3 +1,4 @@
+/* Reset and global styles */
 * {
   padding: 0;
   margin: 0;
@@ -46,10 +47,12 @@
   width: 100%;
 }
 
+/* Main content container */
 .content {
   height: 100vh;
 }
 
+/* Register page specific styling */
 .register-page {
   display: flex;
   align-items: center;
@@ -57,6 +60,7 @@
   height: 90vh;
 }
 
+/* Filters section */
 .filters {
   display: flex;
   align-items: center;
@@ -65,8 +69,7 @@
   box-shadow: 0 0 3px gray;
 }
 
-/*icons*/
-
+/* Switch icons */
 .switch-icons {
   border: 1px solid rgba(0, 0, 0, 0.677);
   border-radius: 5px;
@@ -86,6 +89,7 @@
   color: gray;
 }
 
+/* Media query for smaller devices */
 @media (max-width: 768px) {
   .filters {
     flex-direction: column;
@@ -98,16 +102,17 @@
 
   .logout-button {
     margin-top: 10px;
-    width: 100%;
+    width: 100%; /* Ensure button takes full width */
     text-align: center;
   }
 
+  /* Ensure the table or analytics container does not overflow horizontally */
   .table-container,
   .analytics-container {
-    /* overflow-x: auto; */
-    overflow-x: none;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
   }
 
+  /* Adjust footer to full width */
   .footer {
     width: 100%;
   }
