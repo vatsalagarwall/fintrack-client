@@ -111,3 +111,16 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar,
+  .footer {
+    width: 100%;
+    padding: 0 15px; /* Adjust padding as needed */
+  }
+}
+
+.navbar .container-fluid,
+.footer .container-fluid {
+  padding: 0;
+}
