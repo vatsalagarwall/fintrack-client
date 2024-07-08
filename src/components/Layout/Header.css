@@ -4,10 +4,23 @@
   background-color: #343a40;
 }
 
+/* header.css */
+
 .navbar-brand {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
+  /* Adjusting alignment */
+  margin-right: auto; /* Pushes navbar-brand to the start */
+}
+
+.navbar-nav {
+  /* Adjusting alignment */
+  margin-left: auto; /* Pushes navbar-nav to the end */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    /* For smaller screens, reset margin to align items to start */
+    margin-left: 0;
+  }
 }
 
 .nav-link {
