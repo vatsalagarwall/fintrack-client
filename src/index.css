@@ -104,7 +104,8 @@
 
   .table-container,
   .analytics-container {
-    overflow-x: auto;
+    /* overflow-x: auto; */
+    overflow: none;
   }
 
   .footer {
