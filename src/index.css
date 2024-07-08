@@ -106,4 +106,8 @@
   .analytics-container {
     overflow-x: auto;
   }
+
+  .footer {
+    width: 100%;
+  }
 }
