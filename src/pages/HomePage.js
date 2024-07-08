@@ -7,6 +7,8 @@ import moment from 'moment'
 import Analytics from '../components/Analytics';
 import ReactGA from 'react-ga';
 import Header from '../components/Layout/Header';
+import './HomePage.css';
+
 
 const { RangePicker } = DatePicker;
 

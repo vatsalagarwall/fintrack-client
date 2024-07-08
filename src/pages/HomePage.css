@@ -1,4 +1,4 @@
-.dashboard-container {
+/* .dashboard-container {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
@@ -25,4 +25,50 @@
 .icon {
   font-size: 20px;
   cursor: pointer;
+} */
+
+/* HomePage.css */
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters div {
+  margin-right: 20px;
+}
+
+.switch-icons {
+  display: flex;
+  align-items: center;
+}
+
+.switch-icons svg {
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.logout-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+.bg-dark {
+  background-color: #343a40;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
