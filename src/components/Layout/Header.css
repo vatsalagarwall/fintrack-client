@@ -1,48 +1,47 @@
-/* Header.css */
-
+/* General styling for responsiveness */
 .navbar {
   background-color: #343a40;
+  color: white;
 }
-
-/* header.css */
 
 .navbar-brand {
-  /* Adjusting alignment */
-  margin-right: auto; /* Pushes navbar-brand to the start */
+  color: white;
 }
 
-.navbar-nav {
-  /* Adjusting alignment */
-  margin-left: auto; /* Pushes navbar-nav to the end */
+.navbar-brand:hover {
+  color: #ccc;
 }
 
 .nav-link {
   color: white;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
 }
 
-.nav-link svg {
-  margin-right: 5px;
+.nav-link:hover {
+  color: #ccc;
 }
 
 .btn-outline-danger {
   color: #dc3545;
   border-color: #dc3545;
-  background-color: transparent;
-  transition: all 0.3s ease;
 }
 
 .btn-outline-danger:hover {
-  color: white;
   background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .navbar {
-    /* For smaller screens, reset margin to align items to start */
-    flex-direction: column;
-    align-items: flex-start;
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-top: 10px;
+  }
+
+  .btn-outline-danger {
+    margin-top: 10px;
   }
 }
