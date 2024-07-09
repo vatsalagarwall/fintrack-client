@@ -160,7 +160,7 @@ const Analytics = ({ allTransactions }) => {
                                 <div className="card shadow-sm mb-3" key={category}>
                                     <div className="card-body">
                                         <h6>{category}</h6>
-                                        <Progress percent={percent.toFixed(2)} />
+                                        <Progress percent={percent.toFixed(2)} strokeColor="green" />
                                     </div>
                                 </div>
                             )
