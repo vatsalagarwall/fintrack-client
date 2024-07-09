@@ -54,22 +54,22 @@
 //                 </div>
 //             </div>
 //             <div className="row">
-//                 <div className="col-md-6">
-//                     <h4>Category Wise Income</h4>
-//                     {categories.map(category => {
-//                         const amount = allTransactions.filter(transaction => transaction.type === 'income' && transaction.category === category).reduce((acc, transaction) => acc + transaction.amount, 0);
-//                         return (
-//                             amount > 0 && (
-//                                 <div className="card shadow-sm mb-3" key={category}>
-//                                     <div className="card-body">
-//                                         <h6>{category}</h6>
-//                                         <Progress percent={((amount / totalIncomeTurnover) * 100).toFixed(0)} />
-//                                     </div>
-//                                 </div>
-//                             )
-//                         );
-//                     })}
+// <div className="col-md-6">
+//     <h4>Category Wise Income</h4>
+//     {categories.map(category => {
+//         const amount = allTransactions.filter(transaction => transaction.type === 'income' && transaction.category === category).reduce((acc, transaction) => acc + transaction.amount, 0);
+//         return (
+//             amount > 0 && (
+//                 <div className="card shadow-sm mb-3" key={category}>
+//                     <div className="card-body">
+//                         <h6>{category}</h6>
+//                         <Progress percent={((amount / totalIncomeTurnover) * 100).toFixed(0)} />
+//                     </div>
 //                 </div>
+//             )
+//         );
+//     })}
+// </div>
 //                 <div className="col-md-6">
 //                     <h4>Category Wise Expense</h4>
 //                     {categories.map(category => {
@@ -150,7 +150,7 @@ const Analytics = ({ allTransactions }) => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-6">
+                {/* <div className="col-md-6">
                     <h4>Category Wise Income</h4>
                     {categories.map(category => {
                         const amount = allTransactions.filter(transaction => transaction.type === 'income' && transaction.category === category).reduce((acc, transaction) => acc + transaction.amount, 0);
@@ -161,6 +161,22 @@ const Analytics = ({ allTransactions }) => {
                                     <div className="card-body">
                                         <h6>{category}</h6>
                                         <Progress percent={percent.toFixed(2)} strokeColor="green" />
+                                    </div>
+                                </div>
+                            )
+                        );
+                    })}
+                </div> */}
+                <div className="col-md-6">
+                    <h4>Category Wise Income</h4>
+                    {categories.map(category => {
+                        const amount = allTransactions.filter(transaction => transaction.type === 'income' && transaction.category === category).reduce((acc, transaction) => acc + transaction.amount, 0);
+                        return (
+                            amount > 0 && (
+                                <div className="card shadow-sm mb-3" key={category}>
+                                    <div className="card-body">
+                                        <h6>{category}</h6>
+                                        <Progress percent={((amount / totalIncomeTurnover) * 100).toFixed(0)} />
                                     </div>
                                 </div>
                             )
