@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Modal, Input, Select, message, Table, DatePicker, Pagination } from 'antd';
+import { Form, Modal, Input, Select, message, Table, DatePicker } from 'antd';
 import { UnorderedListOutlined, AreaChartOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons'
 import Spinner from '../components/Spinner';
 import axios from 'axios';
@@ -21,8 +21,7 @@ const HomePage = () => {
     const [type, setType] = useState('all')
     const [viewData, setViewData] = useState("table");
     const [editable, setEditable] = useState(null);
-    const [currentPage, setCurrentPage] = useState(1);
-    const [pageSize, setPageSize] = useState(6); // Set page size to 6
+
 
 
     //react ga
@@ -219,14 +218,7 @@ const HomePage = () => {
             </div>
 
             <div>
-                {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} style={{ marginTop: "30px" }} pagination={{
-                    current: currentPage,
-                    pageSize: pageSize,
-                    onChange: (page, pageSize) => {
-                        setCurrentPage(page);
-                        setPageSize(pageSize);
-                    },
-                }} /> : <Analytics allTransactions={allTransactions} />
+                {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} style={{ marginTop: "30px" }} /> : <Analytics allTransactions={allTransactions} />
                 }
             </div>
 
