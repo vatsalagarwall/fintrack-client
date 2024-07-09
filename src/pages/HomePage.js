@@ -216,7 +216,7 @@ const HomePage = () => {
             </div>
 
             <div>
-                {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} style={{ marginTop: "30px" }} /> : <Analytics allTransactions={allTransactions} />
+                {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} style={{ marginTop: "30px" }} pagination={6} /> : <Analytics allTransactions={allTransactions} />
                 }
             </div>
 
