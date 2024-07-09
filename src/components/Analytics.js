@@ -31,8 +31,8 @@ const Analytics = ({ allTransactions }) => {
                             <h6 className="text-success">Income: {totalIncomeTransactions.length}</h6>
                             <h6 className="text-danger">Expense: {totalExpenseTransactions.length}</h6>
                             <div className="d-flex justify-content-around mt-3">
-                                <Progress type="circle" strokeColor="green" percent={totalIncomePercent.toFixed(0)} />
-                                <Progress type="circle" strokeColor="red" percent={totalExpensePercent.toFixed(0)} />
+                                <Progress type="circle" strokeColor="green" percent={totalIncomePercent.toFixed(2)} />
+                                <Progress type="circle" strokeColor="red" percent={totalExpensePercent.toFixed(2)} />
                             </div>
                         </div>
                     </div>
@@ -46,8 +46,8 @@ const Analytics = ({ allTransactions }) => {
                             <h6 className="text-success">Income: {totalIncomeTurnover}</h6>
                             <h6 className="text-danger">Expense: {totalExpenseTurnover}</h6>
                             <div className="d-flex justify-content-around mt-3">
-                                <Progress type="circle" strokeColor="green" percent={totalIncomeTurnoverPercent.toFixed(0)} />
-                                <Progress type="circle" strokeColor="red" percent={totalExpenseTurnoverPercent.toFixed(0)} />
+                                <Progress type="circle" strokeColor="green" percent={totalIncomeTurnoverPercent.toFixed(2)} />
+                                <Progress type="circle" strokeColor="red" percent={totalExpenseTurnoverPercent.toFixed(2)} />
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const Analytics = ({ allTransactions }) => {
                                 <div className="card shadow-sm mb-3" key={category}>
                                     <div className="card-body">
                                         <h6>{category}</h6>
-                                        <Progress percent={((amount / totalIncomeTurnover) * 100).toFixed(0)} />
+                                        <Progress percent={((amount / totalIncomeTurnover) * 100).toFixed(2)} />
                                     </div>
                                 </div>
                             )
@@ -79,7 +79,7 @@ const Analytics = ({ allTransactions }) => {
                                 <div className="card shadow-sm mb-3" key={category}>
                                     <div className="card-body">
                                         <h6>{category}</h6>
-                                        <Progress percent={((amount / totalExpenseTurnover) * 100).toFixed(0)} />
+                                        <Progress percent={((amount / totalExpenseTurnover) * 100).toFixed(2)} />
                                     </div>
                                 </div>
                             )
