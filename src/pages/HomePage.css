@@ -84,7 +84,7 @@ html {
 /* Responsive Design */
 @media (max-width: 768px) {
   .filters {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .switch-icons {
