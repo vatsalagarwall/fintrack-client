@@ -221,7 +221,7 @@ const HomePage = () => {
             </div>
 
             <div>
-                {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} style={{ marginTop: "30px", height: "500px" }} pagination={{
+                {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} style={{ marginTop: "30px" }} pagination={{
                     current: currentPage,
                     pageSize: pageSize,
                     onChange: (page, pageSize) => {
