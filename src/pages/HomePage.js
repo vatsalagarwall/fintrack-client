@@ -21,6 +21,9 @@ const HomePage = () => {
     const [type, setType] = useState('all')
     const [viewData, setViewData] = useState("table");
     const [editable, setEditable] = useState(null);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [pageSize, setPageSize] = useState(6); // Set page size to 6
+
 
 
 
@@ -218,7 +221,14 @@ const HomePage = () => {
             </div>
 
             <div>
-                {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} style={{ marginTop: "30px" }} pagination={false} /> : <Analytics allTransactions={allTransactions} />
+                {viewData === 'table' ? <Table columns={columns} dataSource={allTransactions} style={{ marginTop: "30px", height: "100vh" }} pagination={{
+                    current: currentPage,
+                    pageSize: pageSize,
+                    onChange: (page, pageSize) => {
+                        setCurrentPage(page);
+                        setPageSize(pageSize);
+                    },
+                }} /> : <Analytics allTransactions={allTransactions} />
                 }
             </div>
 
