@@ -158,12 +158,14 @@ const Analytics = ({ allTransactions }) => {
                     {categories.map(category => {
                         const amount = allTransactions.filter(transaction => transaction.type === 'income' && transaction.category === category).reduce((acc, transaction) => acc + transaction.amount, 0);
                         return (
-                            <div className="card shadow-sm mb-3" key={category}>
-                                <div className="card-body">
-                                    <h6>{category}</h6>
-                                    <Progress percent={((amount / totalIncomeTurnover) * 100).toFixed(2)} />
+                            amount > 0 && (
+                                <div className="card shadow-sm mb-3" key={category}>
+                                    <div className="card-body">
+                                        <h6>{category}</h6>
+                                        <Progress percent={((amount / totalIncomeTurnover) * 100).toFixed(2)} />
+                                    </div>
                                 </div>
-                            </div>
+                            )
                         );
                     })}
                 </div>
@@ -172,12 +174,14 @@ const Analytics = ({ allTransactions }) => {
                     {categories.map(category => {
                         const amount = allTransactions.filter(transaction => transaction.type === 'expense' && transaction.category === category).reduce((acc, transaction) => acc + transaction.amount, 0);
                         return (
-                            <div className="card shadow-sm mb-3" key={category}>
-                                <div className="card-body">
-                                    <h6>{category}</h6>
-                                    <Progress percent={((amount / totalExpenseTurnover) * 100).toFixed(2)} />
+                            amount > 0 && (
+                                <div className="card shadow-sm mb-3" key={category}>
+                                    <div className="card-body">
+                                        <h6>{category}</h6>
+                                        <Progress percent={((amount / totalExpenseTurnover) * 100).toFixed(2)} />
+                                    </div>
                                 </div>
-                            </div>
+                            )
                         );
                     })}
                 </div>
