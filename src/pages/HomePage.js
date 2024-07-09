@@ -250,7 +250,7 @@ const HomePage = () => {
                     </Form.Item>
                     <Form.Item label="Category" name="category">
                         <Select>
-                            <Select.Option value="salary">Salary</Select.Option>
+                            {/* <Select.Option value="salary">Salary</Select.Option>
                             <Select.Option value="tip">Tip</Select.Option>
                             <Select.Option value="project">Project</Select.Option>
                             <Select.Option value="food">Food</Select.Option>
@@ -259,6 +259,21 @@ const HomePage = () => {
                             <Select.Option value="medical">Medical</Select.Option>
                             <Select.Option value="fee">Fee</Select.Option>
                             <Select.Option value="tax">Tax</Select.Option>
+                            <Select.Option value="salary">Salary</Select.Option>
+                            <Select.Option value="tip">Tip</Select.Option>
+                            <Select.Option value="project">Project</Select.Option> */}
+                            <Select.Option value="groceries">Groceries</Select.Option>
+                            <Select.Option value="rent-mortgage">Rent/Mortgage</Select.Option>
+                            <Select.Option value="utilities">Utilities(Electricity, Water, Gas)</Select.Option>
+                            <Select.Option value="transportation">Transportation </Select.Option>
+                            <Select.Option value="healthcare">Healthcare </Select.Option>
+                            <Select.Option value="personal-care">Personal Care </Select.Option>
+                            <Select.Option value="dining-out">Dining Out</Select.Option>
+                            <Select.Option value="entertainment">Entertainment </Select.Option>
+                            <Select.Option value="clothing">Clothing</Select.Option>
+                            <Select.Option value="fitness">Fitness </Select.Option>
+                            <Select.Option value="education">Education </Select.Option>
+
                         </Select>
                     </Form.Item>
                     <Form.Item label="Date" name="date">
