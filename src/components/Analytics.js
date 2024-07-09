@@ -3,7 +3,7 @@ import { Progress } from 'antd';
 
 
 const Analytics = ({ allTransactions }) => {
-    const categories = ['salary', 'tip', 'project', 'food', 'movie', 'bills', 'medical', 'fee', 'tax'];
+    const categories = ['groceries', 'rent-mortgage', 'utilities', 'salary', 'tax', 'transportation', 'healthcare', 'personal-care', 'dining-out', 'entertainment', 'clothing', 'fitness', 'education'];
 
     const totalTransactions = allTransactions.length;
     const totalIncomeTransactions = allTransactions.filter(transaction => transaction.type === 'income');
